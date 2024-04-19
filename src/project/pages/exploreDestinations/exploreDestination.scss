@@ -1,0 +1,72 @@
+.destination-explore-banner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    img{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+    }
+    .destination-explore-content{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+         margin-bottom: 200px;
+         h1{
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            color: #ffff;
+         }
+         .destination-explore-description{
+            width: 80%;
+            margin-top: 20px;
+            p{
+                font-size: 20px;
+                font-family: 'Times New Roman', Times, serif;
+                color: #ffff;
+             }
+         }
+         
+    }
+}
+.destination-explore{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.destination-cards-container{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .destination-cards{
+        width: 95%;
+        display: flex;
+        gap: 20px;
+        .explore-images{
+            width: 40%;
+            height: 200px;
+            img{
+                width: 100%;
+                height: 200px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+.destination-cards{
+    flex-direction: column;
+}
+       
+    
+   
+}

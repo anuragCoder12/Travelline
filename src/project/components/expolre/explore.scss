@@ -1,0 +1,55 @@
+@import '../../styles/variables/variables.scss';
+@import '../../styles/mixins/mixin.scss';
+.explore{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .content{
+        width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+   
+    h2{
+@include h2
+    }
+    p{
+      @include p($paragraph-color)
+    }
+    h3{
+        font-weight: 600;
+        margin-top: 60px;
+        color:$paragraph-color  ;
+    }
+    button{
+        @include button(200px)
+    }
+    button{
+        margin-top: 40px;
+    }
+    
+}
+}
+.choose-us{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .explore{
+    }
+    .choose-us{
+        flex-direction: column;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,66 @@
+@import "../../styles/mixins/mixin.scss";
+@import '../../styles/variables/variables.scss';
+.middle {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .middle-container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+    h2 {
+      @include h2;
+    }
+    .contents {
+      width: 100%;
+      height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 60px;
+.middle-card{
+  overflow: hidden;
+}
+      
+        .explore-image{
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+          object-fit: contain;
+          transition: transform 0.3s ease;
+          &:hover {
+            transform: scale(1.1); 
+        }
+        
+      }
+
+    }
+    .description{
+      margin-top: 60px;
+      p{
+        @include p($paragraph-color)
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .middle{
+    height: 120vh;
+  }
+  .middle-container{
+    width: 100%;
+  }
+.card{
+   display: block;
+  }
+  .contents{
+    flex-direction: column;
+  }
+}

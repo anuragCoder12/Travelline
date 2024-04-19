@@ -1,0 +1,76 @@
+.explore {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.explore .content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.explore .content h2 {
+  color: #F36721;
+  font-size: 30px;
+  font-weight: 600;
+}
+.explore .content p {
+  font-size: 20px;
+  color: #949494;
+  font-family: "Times New Roman", Times, serif;
+}
+.explore .content h3 {
+  font-weight: 600;
+  margin-top: 60px;
+  color: #949494;
+}
+.explore .content button {
+  width: 200px;
+  height: 2.6rem;
+  background-color: #F36721;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  padding: 0.8em 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+  font-family: inherit;
+  font-size: 18px;
+}
+.explore .content button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+.explore .content button:active {
+  transform: scale(0.95);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+.explore .content button {
+  margin-top: 40px;
+}
+
+.choose-us {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.choose-us .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .choose-us {
+    flex-direction: column;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=explore.css.map */

@@ -1,0 +1,121 @@
+@import '../../styles/mixins/mixin.scss';
+@import '../../styles/variables/variables.scss';
+
+.about-banner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+    }
+    .about-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+         margin-bottom: 200px;
+         h1{
+            z-index: 20;
+            font-size: 100px;
+            font-family: 'Times New Roman', Times, serif;
+         }
+         h3{
+            z-index: 20;
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+           
+         }
+    }
+}
+.about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+.about-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .about-content-container{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+       h2{
+        @include h2
+       }
+       p{
+        margin-top: 10px;
+        @include p($paragraph-color)
+       }
+    }
+}
+.about-destinations{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    .about-destinations-header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h2{
+            @include h2
+        }
+    }
+    .about-card{
+        margin-top: 20px;
+        width: 100%;
+        height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative; 
+        img{
+            width: 100%;
+            height: 700px;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        h3{
+            position: absolute;
+            color: white;
+            font-size: 50px;
+            
+        }
+        .about-destination-collection{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: black;
+            opacity: 0.3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            ul {
+                
+                padding: 0; 
+                margin: 0; 
+            }
+            li{
+                color: #ffff;
+                opacity: 1;
+                z-index: 20;
+                font-size: 30px;
+            }
+        }
+    }
+}
+}

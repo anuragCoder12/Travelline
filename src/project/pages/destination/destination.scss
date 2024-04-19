@@ -1,0 +1,92 @@
+@import '../../styles/mixins/mixin.scss';
+@import '../../styles/variables/variables.scss';
+.destination-banner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+    }
+    .destination-content{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+         margin-bottom: 200px;
+         h1{
+            font-size: 100px;
+            font-family: 'Times New Roman', Times, serif;
+           opacity: 0.5;
+         }
+         h3{
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            opacity: 0.5;
+         }
+    }
+}
+.destination{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .destinationsubs{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .parabox{
+            width: 60%;
+            p{
+                @include p($paragraph-color)
+            }
+        }
+        button{
+            margin-top: 30px;
+            @include button(300px)
+        }
+        h2{
+            margin-top: 40px;
+            @include h2
+        }
+        .destinations{
+            margin-top: 60px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-left: 50px;
+            .deseination-cards{
+                width: 250px;
+                height: 300px;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 270px;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    object-fit: cover;
+                    transition: transform 0.3s ease;
+
+                    &:hover {
+                        transform: scale(1.1); 
+                    }
+                }
+                h3{
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

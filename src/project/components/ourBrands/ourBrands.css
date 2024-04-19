@@ -1,0 +1,44 @@
+.brands {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.brands h2 {
+  color: #F36721;
+  font-size: 30px;
+  font-weight: 600;
+}
+.brands .brand-about {
+  width: 100%;
+  height: 450px;
+  background-color: rgb(127, 219, 127);
+  margin-top: 20px;
+}
+.brands .brand-about img {
+  width: 100%;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.8;
+  position: absolute;
+}
+.brands .brand-about button {
+  position: absolute;
+  opacity: 1;
+  width: 200px;
+  height: 2.6rem;
+  background-color: white;
+  color: #F36721;
+  border-radius: 25px;
+  border: 1px solid #F36721;
+  padding: 0.8em 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+  font-family: inherit;
+  font-size: 18px;
+}/*# sourceMappingURL=ourBrands.css.map */

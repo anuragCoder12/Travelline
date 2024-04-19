@@ -1,0 +1,73 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+}
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero .content {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero .content h1 {
+  font-size: 65px;
+  color: white;
+  font: bold;
+}
+@media screen and (max-width: 941px) {
+  .hero .content h1 {
+    font-size: 40px;
+  }
+}
+.hero .content p {
+  font-size: 20px;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+.hero .herocards {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  top: 140px;
+}
+.hero .herocards .card {
+  width: 240px;
+  height: 150px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.hero .herocards .card .heroimg {
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.hero .herocards .card .heroimg:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 800px) {
+  .herocards, .card, .heroimg {
+    display: none;
+  }
+}/*# sourceMappingURL=hero.css.map */
